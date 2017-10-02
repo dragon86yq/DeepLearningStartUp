@@ -7,6 +7,7 @@ with open('happiness_seg.txt', 'r', encoding='utf-8') as f:
         if len(line) > 0:
             words = words + line.split(' ')
 
+# 当前后两个list元素长度为2时，将其存入新建的list
 for i in range(len(words)):
     if len(words[i]) == 2 and len(words[i+1]) == 2:
         content.append(words[i] + ' ' + words[i+1])
